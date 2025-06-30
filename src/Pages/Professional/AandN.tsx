@@ -41,9 +41,9 @@ const AndN:React.FC=()=>{
 
                         {Awards.map((award, index) => (
                           <div key={index}>
-                            <ul className="max-w-4xl mx-auto">
-                              <li className="flex items-start gap-2 text-lg mt-1">
-                                <span className="min-w-[1.25rem] text-blue-500">{'\u276F'}</span>
+                            <ul className="max-w-4xl mx-auto cursor-default">
+                              <li className="flex items-start gap-2 text-lg mt-1 group">
+                                <span className="min-w-[1.25rem] group-hover:text-blue-500 transition-colors duration-200">{'\u276F'}</span>
                                 <span className="text-justify">{award}</span>
                               </li>
                             </ul>
