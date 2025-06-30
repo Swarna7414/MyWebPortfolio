@@ -7,7 +7,7 @@ import { TbPoint } from "react-icons/tb";
 
 const AndN:React.FC=()=>{
     return(
-        <section className="h-screen w-full p-5 pt-[90px] xl:px-12 lg:px-10">
+        <section className="h-screen w-full p-5 pt-[90px] px-12">
             <div className="flex flex-col xl:flex-row gap-2 mt-2 justify-between">
                     
                     <div className="flex flex-col xl:w-6/13">
@@ -98,7 +98,7 @@ const AndN:React.FC=()=>{
                     </div>
             
                     
-                    <div className="flex flex-col xl:w-6/13">
+                    <div className="flex flex-col xl:w-6/13 cursor-default">
             
                       <div className="flex flex-row items-center justify-center mt-4 mb-2 pl-3.5 text-2xl font-semibold cursor-pointer group">
                         <MdRateReview className="mr-1 mt-1 group-hover:text-blue-500"/>
@@ -107,8 +107,8 @@ const AndN:React.FC=()=>{
 
                       <div className=" flex flex-col w-full max-h-[75vh] bg-gray-200 overflow-y-auto text-black p-2 pr-4 gap-y-5 rounded-2xl shadow-md shadow-blue-300 hover:shadow-md hover:shadow-blue-500  backdrop:backdrop-blur-2xl">
 
-                        <div>
-                            <h1 className="font-bold">2023</h1>
+                        <div className="group">
+                            <h1 className="font-bold group-hover:text-blue-500 group-hover:underline group-hover:underline-offset-1 transition duration-300">2023</h1>
                             <div className="ml-3 mt-0.5">
                                 <p className="flex flex-row items-center"> <TbPoint/> CBMS, 2023 (PC Member)</p>
                                 <p className="flex flex-row items-center"> <TbPoint/> ImageCLEF (Organizer)</p>
@@ -117,16 +117,16 @@ const AndN:React.FC=()=>{
                         </div>
 
 
-                        <div>
-                            <h1 className="font-bold">2022</h1>
+                        <div className="group">
+                            <h1 className="font-bold group-hover:text-blue-500 group-hover:underline group-hover:underline-offset-1 transition duration-300">2022</h1>
                             <div className="ml-3 mt-0.5">
                                 <p className="flex flex-row items-center"> <TbPoint/> MICCAI, 2022 (Reviewer)</p>
                             </div>
                         </div>
 
 
-                        <div>
-                            <h1 className="font-bold">2021</h1>
+                        <div className="group">
+                            <h1 className="font-bold group-hover:text-blue-500 group-hover:underline group-hover:underline-offset-1 transition duration-300">2021</h1>
                             <div className="ml-3 mt-0.5">
                                 <p className="flex flex-row items-center"> <TbPoint/>MedAI: Transparency in Medical Image Segmentation (Challenge organizer)</p>
                                 <p className="flex flex-row items-center"> <TbPoint/>3rd International Endoscopy Computer Vision Workshop (WorkShop organizer)</p>
@@ -135,8 +135,8 @@ const AndN:React.FC=()=>{
                         </div>
 
 
-                        <div>
-                            <h1 className="font-bold">2020</h1>
+                        <div className="group">
+                            <h1 className="font-bold group-hover:text-blue-500 group-hover:underline group-hover:underline-offset-1 transition duration-300">2020</h1>
                             <div className="ml-3 mt-0.5">
                                 <p className="flex flex-row items-center"> <TbPoint/>IEEE 33rd International Symposium on Computer Based Medical Systems (CBMS)</p>
                                 <p className="flex flex-row items-center"> <TbPoint/>28th ACM International Conference on Multimedia</p>
@@ -148,8 +148,8 @@ const AndN:React.FC=()=>{
                         </div>
 
 
-                        <div>
-                            <h1 className="font-bold">2019</h1>
+                        <div className="group">
+                            <h1 className="font-bold group-hover:text-blue-500 group-hover:underline group-hover:underline-offset-1 transition duration-300">2019</h1>
                             <div className="ml-3 mt-0.5">
                                 <p className="flex flex-row items-center"> <TbPoint/>ACM International Conference on Multimedia 2019 (ACMMM 2019)</p>
                                 <p className="flex flex-row items-center"> <TbPoint/>25th International Conference on MultiMedia Modeling (MMM 2019)</p>
@@ -157,8 +157,8 @@ const AndN:React.FC=()=>{
                             </div>
                         </div>
 
-                        <div>
-                            <h1 className="font-bold">2018</h1>
+                        <div className="group">
+                            <h1 className="font-bold group-hover:text-blue-500 group-hover:underline group-hover:underline-offset-1 transition duration-300">2018</h1>
                             <div className="ml-3 mt-0.5">
                                 <p className="flex flex-row items-center"> <TbPoint/>ACM Multimedia Systems Conference 2018</p>
                                 <p className="flex flex-row items-center"> <TbPoint/>31st IEEE Symposium on Content Based Medical System (CBMS 2018)</p>
