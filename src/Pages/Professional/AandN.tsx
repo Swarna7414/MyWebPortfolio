@@ -1,11 +1,31 @@
 import React from "react";
 import {FaAward} from "react-icons/fa"
-import { BsDot } from "react-icons/bs";
 import { MdRateReview } from "react-icons/md";
 import { TbPoint } from "react-icons/tb";
 
 
 const AndN:React.FC=()=>{
+  const Awards:string[]=[
+    "Recognized among world’s top 2% scientists by Stanford and Elsevier for biomedical AI research excellence.",
+    "Honored as a 2024 Top Scholar by ScholarGPS, ranking in the top 0.5% globally.",
+    "Ranked #51 in Image Segmentation and #1,201 in Medical Imaging by ScholarGPS in 2024.",
+    "Our work “DiffBoost” was accepted in IEEE TMI, showcasing innovations in medical segmentation.",
+    "Our Kvasir-SEG dataset was featured in Stanford's AI Index Report 2022 for global relevance.",
+    "Received the Best Industry-Related Paper Award at ICPR 2024 from IAPR organization.",
+    "Elevated to IEEE Senior Member for sustained excellence and contributions in biomedical artificial intelligence.",
+    "Serving as Associate Editor for Medical Physics and Frontiers in Radiation Oncology journals.",
+    "Guest Editor for two special issues focusing on AI in medical imaging and gastroenterology.",
+    "Awarded IEEE Chicago’s Junior Distinguished R&D Award in both 2022 and 2024 for research impact.",
+    "Received the NSF I-Corps 2025 award and Spring 2025 USD A&S Development Grant.",
+    "Won Poster of Distinction at DDW 2024 for outstanding scientific presentation in medical research.",
+    "Honored with the “Papers With Code” Contributor Award for promoting reproducible research practices.",
+    "Three papers accepted at ICASSP 2025 and three more accepted at IEEE CVF WACV 2025.",
+    "Five papers presented at MICCAI 2024 and two accepted at CVPR Workshop the same year.",
+    "One MICCAI 2022 paper accepted, with Student Travel Award granted for co-authored contribution.",
+    "Finalist for Best Student Paper at CBMS 2020 held at Mayo Clinic, Rochester, USA.",
+    "Earned Best Paper and Poster Presentation Awards at ICEIC 2018, Hawaii, USA.",
+    "Honored with IEEE TMI Distinguished Reviewer Award (Silver Level) for 2023 to 2024 review contributions."
+  ]
     return(
         <section className="h-screen w-full p-5 pt-[90px] px-12">
             <div className="flex flex-col xl:flex-row gap-2 mt-2 justify-between">
@@ -19,81 +39,17 @@ const AndN:React.FC=()=>{
 
                       <div className="w-full max-h-[75vh] bg-gray-200 overflow-y-auto text-black p-2 pr-4 gap-y-5 rounded-2xl shadow-md shadow-blue-300 hover:shadow-md hover:shadow-blue-500  backdrop:backdrop-blur-2xl">
 
-                        <div>
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                              <p className="cursor-pointer text-justify leading-relaxed">
-                                Honored to be named a 2024 Top Scholar by ScholarGPS, ranking top 0.5% worldwide.
-                              </p>
+                        {Awards.map((award, index) => (
+                          <div key={index}>
+                            <ul className="max-w-4xl mx-auto">
+                              <li className="flex items-start gap-2 text-lg mt-1">
+                                <span className="min-w-[1.25rem] text-blue-500">{'\u276F'}</span>
+                                <span className="text-justify">{award}</span>
+                              </li>
+                            </ul>
                           </div>
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-xl mt-1 transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                            <p className="cursor-pointer text-justify leading-relaxed">
-                              Received the NSF I-Corps 2025 award to commercialize AI-powered medical imaging research and innovations.
-                            </p>
-                          </div>
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-2xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                              <p className="cursor-pointer text-justify leading-relaxed">
-                                Won Best Industry Paper Award at ICPR 2024 for spectral and spatial segmentation advancements.
-                              </p>
-                          </div>
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-4xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                              <p className="cursor-pointer text-justify leading-relaxed">
-                                Elevated to IEEE Senior Member for sustained impact in medical imaging and AI technologies.
-                              </p>
-                          </div>
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                            <p className="cursor-pointer text-justify leading-relaxed">
-                              Received Poster of Distinction Award at DDW 2024 for gastrointestinal disease-related AI imaging research.
-                            </p>
-                          </div>
-                          
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                            <p className="cursor-pointer text-justify leading-relaxed">
-                              Won IEEE Chicago Section’s 2024 Junior R&D Award for excellence in medical AI research.
-                            </p>
-                          </div>
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-4xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                            <p className="cursor-pointer text-justify leading-relaxed">
-                              Serving as Associate Editor for Medical Physics and Frontiers in Radiation Oncology journals.
-                            </p>
-                          </div>
-                          
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-4xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                            <p className="cursor-pointer text-justify leading-relaxed">
-                              Kvasir-SEG dataset featured in Stanford’s AI Index Report 2022 for global scientific significance.
-                            </p>
-                          </div>
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                            <p className="cursor-pointer text-justify leading-relaxed">
-                              Presented papers at MICCAI, WACV, ICASSP, and CVPR Workshop between 2024 and 2025.
-                            </p>
-                          </div>
-                          
-                          <div className="group transition-transform duration-200 flex flex-row items-start BsDot text-lg mt-1 max-w-4xl mx-auto">
-                            <BsDot className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
-                            <p className="cursor-pointer text-justify leading-relaxed">
-                             Ranked #51 in Image Segmentation and #1,201 in Medical Imaging by ScholarGPS in 2024.
-                             </p>
-                          </div>
+                        ))}
 
-
-                        </div>
                       </div>
                     </div>
             
@@ -102,7 +58,7 @@ const AndN:React.FC=()=>{
             
                       <div className="flex flex-row items-center justify-center mt-4 mb-2 pl-3.5 text-2xl font-semibold cursor-pointer group">
                         <MdRateReview className="mr-1 mt-1 group-hover:text-blue-500"/>
-                        <h1>Conference Service and Peer Review Roles</h1>
+                        <h1>Conference Service & Peer Review</h1>
                       </div>
 
                       <div className=" flex flex-col w-full max-h-[75vh] bg-gray-200 overflow-y-auto text-black p-2 pr-4 gap-y-5 rounded-2xl shadow-md shadow-blue-300 hover:shadow-md hover:shadow-blue-500  backdrop:backdrop-blur-2xl">
