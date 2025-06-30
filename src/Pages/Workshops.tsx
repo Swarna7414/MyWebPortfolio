@@ -9,6 +9,7 @@ import TransformingMedicalAi from "../assets/Talks/TransformingMedicalAi.png"
 import Biospy from "../assets/Talks/Biopsy.jpg"
 import future from "../assets/Talks/Future.jpg"
 import carrar from "../assets/Talks/Carrar.jpg";
+import First from "../assets/Talks/FirstTalk.png";
 
 const Workshops:React.FC=()=>{
     return(
@@ -253,7 +254,7 @@ const Workshops:React.FC=()=>{
                 </div>
                 <div className="flex items-center justify-center">
                     <img 
-                    src={carrar} 
+                    src={First} 
                     alt="sanfordimage" 
                     className="w-full max-w-xs object-contain rounded-2xl cursor-pointer"
                 />

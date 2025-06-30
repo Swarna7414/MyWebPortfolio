@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
-import { AComprehensiveanalysis, AComprehensiveStudy, Anextensivestudey, Comparativevalidation, Diagnosis, DoubleUNet, Exploring, FANet, HyperKvasir, Kvasir, KvasirCapsule, LightLayers, MachineLearningbasedClassification, MetaLearning, MSRF, NanoNet, PolypGen, Progressively, RealTimePolypDetection, ResUNet, TextGuided, TheEndoText, Validatingpolyp } from "../Services/PublicationsLinks";
+import { AComprehensiveanalysis, AComprehensiveStudy, Anextensivestudey, Comparativevalidation, Diagnosis, DoubleUNet, Exploring, FANet, HyperKvasir, Kvasir, KvasirCapsule, LightLayers, MachineLearningbasedClassification, MetaLearning, MSRF, NanoNet, PolypGen, Progressively, RealTimePolypDetection, ResUNet, TextGuided, TheEndoText, Validatingpolyp,
+  TransUnet,GastroVision,CTLiverSegmentation,TransNetR } from "../Services/PublicationsLinks";
 
 const DevelopPublicatons: React.FC = () => {
   return (
@@ -180,6 +181,24 @@ const DevelopPublicatons: React.FC = () => {
                       </span>,” Proceedings of Computer Based Medical System (CBMS), 2020. 
                   </p>
               </div>
+
+
+              <div className="group transition-transform duration-200 flex flex-row items-start gap-3 text-lg mt-1 max-w-4xl mx-auto" onClick={TransNetR}>
+                <IoMdArrowDroprightCircle className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
+                  <p className="cursor-pointer text-justify leading-relaxed">
+                    D. Jhaetal.,<span className="font-semibold p cursor-pointer group-hover:text-blue-500 text-black">TransNetR: Transformer-based Residual Network for Polyp Segmentation
+                    with Multi-Center Out-of-Distribution Testing.</span> , Proceedings of the Medical Imaging
+                    with Deep Learning, 2023.
+                  </p>
+              </div>
+
+              <div className="group transition-transform duration-200 flex flex-row items-start gap-3 text-lg mt-1 max-w-4xl mx-auto" onClick={CTLiverSegmentation}>
+                <IoMdArrowDroprightCircle className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
+                  <p className="cursor-pointer text-justify leading-relaxed">
+                     D. Jha et al.,<span className="font-semibold p cursor-pointer group-hover:text-blue-800 text-black">CT Liver Segmentation via PVT-based Encoding and Re ned Decoding </span>,
+                     Proceedings of the IEEE International Symposium on Biomedical Imaging, 2024.
+                  </p>
+              </div>
               
               <div className="group transition-transform duration-200 flex flex-row items-start gap-3 text-lg mt-1 max-w-4xl mx-auto" onClick={Kvasir}>
                 <IoMdArrowDroprightCircle className="text-2xl mt-1 transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
@@ -189,6 +208,23 @@ const DevelopPublicatons: React.FC = () => {
                     Kvasir-SEG: A segmented polyp dataset
                     </span>,”Proceedings of IEEE International Symposium on Multimedia (ISM 2019), pp. 225-230, 2019. 
                 </p>
+              </div>
+
+              <div className="group transition-transform duration-200 flex flex-row items-start gap-3 text-lg mt-1 max-w-4xl mx-auto" onClick={GastroVision}>
+                <IoMdArrowDroprightCircle className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
+                  <p className="cursor-pointer text-justify leading-relaxed">
+                      D. Jha, et al.,<span className="font-semibold p cursor-pointer group-hover:text-blue-900 text-black">GastroVision: A Multi-class Endoscopy Image Dataset for Computer
+                      Aided Gastrointestinal Disease Detection.</span> , Proceedings of the ICML Workshop on
+                      Machine Learning for Multimodal Healthcare Data (ML4MHD), 2023.
+                  </p>
+              </div>
+
+              <div className="group transition-transform duration-200 flex flex-row items-start gap-3 text-lg mt-1 max-w-4xl mx-auto" onClick={TransUnet}>
+                <IoMdArrowDroprightCircle className="text-3xl transition-colors duration-200 group-hover:text-blue-500 cursor-pointer" />
+                  <p className="cursor-pointer text-justify leading-relaxed">
+                      N. K. Tomar, A. Shergill, B. Rieders, U. Bagci, & D. Jha,<span className="font-semibold p cursor-pointer group-hover:text-blue-900 text-black">TransResU-Net: Trans
+                      former based ResU-Net for Real-Time Colonoscopy Polyp Segmentation</span>, IEEE BHI,2022
+                  </p>
               </div>
               
               <div className="group transition-transform duration-200 flex flex-row items-start gap-3 text-lg mt-1 max-w-4xl mx-auto" onClick={ResUNet}>

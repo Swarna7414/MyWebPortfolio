@@ -71,3 +71,15 @@ export const TextGuided=()=>{
 export const Exploring=()=>{
     window.open("https://ieeexplore.ieee.org/document/9508610");
 }
+export const TransUnet=()=>{
+    window.open("https://arxiv.org/pdf/2206.08985");
+}
+export const GastroVision=()=>{
+    window.open("https://arxiv.org/pdf/2307.08140");
+}
+export const CTLiverSegmentation=()=>{
+    window.open("https://arxiv.org/pdf/2401.09630");
+}
+export const TransNetR=()=>{
+    window.open("https://arxiv.org/pdf/2303.07428");
+}

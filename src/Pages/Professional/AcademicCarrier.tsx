@@ -34,7 +34,7 @@ const education = [
 const AcademicCarrier: React.FC = () => {
   return (
     <section className="min-h-screen px-12 pt-[200px] pb-12">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 text-black">
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 text-black hover:text-blue-500 transition-all duration-300 cursor-pointer hover:underline-offset-2 hover:underline">
         Educational Background
       </h1>
 
