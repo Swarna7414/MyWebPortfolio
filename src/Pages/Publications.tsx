@@ -195,7 +195,7 @@ const DevelopPublicatons: React.FC = () => {
               <div className="group transition-transform duration-200 flex flex-row items-start gap-3 text-lg mt-1 max-w-4xl mx-auto" onClick={CTLiverSegmentation}>
                 <IoMdArrowDroprightCircle className="text-3xl transition-colors duration-200 group-hover:text-blue-900 cursor-pointer" />
                   <p className="cursor-pointer text-justify leading-relaxed">
-                     D. Jha et al.,<span className="font-semibold p cursor-pointer group-hover:text-blue-800 text-black">CT Liver Segmentation via PVT-based Encoding and Re ned Decoding </span>,
+                     D. Jha et al.,<span className="font-semibold p cursor-pointer group-hover:text-blue-900 text-black">CT Liver Segmentation via PVT-based Encoding and Re ned Decoding </span>,
                      Proceedings of the IEEE International Symposium on Biomedical Imaging, 2024.
                   </p>
               </div>
