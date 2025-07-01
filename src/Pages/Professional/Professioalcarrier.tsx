@@ -1,4 +1,8 @@
 import React from "react";
+import { LiaUniversitySolid } from "react-icons/lia";
+import { MdWork } from "react-icons/md";
+import { IoLocation } from "react-icons/io5";
+import { FaRegCalendarAlt } from "react-icons/fa";
 
 const Professionalcarrier: React.FC = () => {
   interface Data {
@@ -12,8 +16,8 @@ const Professionalcarrier: React.FC = () => {
   const experience:Data[]=[
     {
       name:"University of South Dakota",
-      year:"AUG 2024-Present",
-      location:"Vermillion, South Dakota",
+      year:"AUG 2024 - Present",
+      location:"Vermillion-South Dakota",
       role:" Visiting Assistant Professor",
       points:[
         "Taught AI-related courses like Machine Learning, Neural Networks, and Technical Seminar to 100+ students.",
@@ -28,8 +32,8 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"Northwestern University",
-      year:"JAN 2023- AUG 2024",
-      location:"Chicago,Illinois",
+      year:"JAN 2023 - AUG 2024",
+      location:"Chicago-Illinois",
       role:"Senior Research Associate",
       points:[
         "Prepared interdisciplinary grant proposals for novel AI solutions in medical imaging.",
@@ -43,25 +47,9 @@ const Professionalcarrier: React.FC = () => {
     },
 
     {
-      name:"Research Associate",
+      name:"Northwestern University",
       year:"JAN 2022- DEC 2022",
-      location:"Chicago,Illinois",
-      role:"Research Associate",
-      points:[
-        "Developed AI models for radiation oncology, dose prediction, and organ detection.",
-        "Built deep learning tools for liver, prostate, pancreas, and GI tract analysis.",
-        "Prepared interdisciplinary grant proposals for AI-driven medical imaging solutions.",
-        "Collaborated with clinicians to release public datasets for open-access research.",
-        "Designed interpretable and robust deep learning algorithms for image analysis.",
-        "Published findings, patented novel techniques, and built research partnerships.",
-        "Mentored graduate students, supervised research, and led weekly lab meetings."
-      ]
-    },
-
-    {
-      name:"Research Associate",
-      year:"JAN 2022- DEC 2022",
-      location:"Chicago,Illinois",
+      location:"Chicago-Illinois",
       role:"Research Associate",
       points:[
         "Developed AI models for radiation oncology, dose prediction, and organ detection.",
@@ -76,7 +64,7 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"UiT The Arctic University of Norway",
-      year:"APR 2021- JAN 2022",
+      year:"APR 2021 - JAN 2022",
       location:"Tromsø,Norway",
       role:"Researcher",
       points:[
@@ -93,7 +81,7 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"Simula Research Laboratory & UiT",
-      year:" FEB 2018- APR 2021",
+      year:" FEB 2018 - APR 2021",
       location:"Tromsø,Norway",
       role:"PhD Student",
       points:[
@@ -110,7 +98,7 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"Chosun University",
-      year:" SEP 2015-AUG 2017",
+      year:" SEP 2015 - AUG 2017",
       location:"Gwangju,South Korea",
       role:"Graduate Research Assistant",
       points:[
@@ -133,27 +121,25 @@ const Professionalcarrier: React.FC = () => {
     <section className="p-10 h-screen pt-[79px]">
       <div className="flex flex-col h-full">
         <h1 className="self-center font-bold text-4xl hover:text-blue-500 cursor-pointer duration-300">
-          Professional Carrier
+          Professional Background
         </h1>
 
         <div className="w-full px-4 mt-6">
-  <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-    {experience.map((item, index) => (
-      <div
-        key={index}
-        className="w-full rounded-xl shadow-md p-6 bg-white dark:bg-neutral-900 transition-all duration-300 hover:shadow-lg"
-      >
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-1">
-          {item.role}
-        </h2>
-        <p className="text-sm text-gray-600 dark:text-gray-300">
-          {item.name} • {item.location}
-        </p>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{item.year}</p>
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            {experience.map((item, index) => (
+              <div key={index} className="w-full rounded-2xl shadow-md p-6 bg-blue-100 border-blue-400 border-1 hover:shadow-md transition-all cursor-pointer hover:shadow-blue-600 duration-300">
+                <h2 className=" flex flex-row items-center text-xl font-semibold text-black mb-1">
+                  <LiaUniversitySolid className="mt-1 mr-1 text-blue-600"/> {item.name}
+                </h2>
+                <div className="text-md flex flex-row">
+                  <h1 className="flex flex-row items-center mr-2"><MdWork className="mr-1.5 text-amber-700"/> {item.role} <span className="text-lg">,</span></h1>
+                  <h1 className="flex flex-row items-center"><IoLocation className="mr-1.5 text-red-500"/> {item.location}</h1>
+                </div>
+        <p className="text-sm text-black mb-4 flex flex-row items-center"><FaRegCalendarAlt className="mr-1.5"/>{item.year}</p>
         <ul className="space-y-2 mt-2">
           {item.points.map((point, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-200">
-              <span className="text-blue-500 min-w-[1.25rem]">{'\u276F'}</span>
+            <li key={i} className="flex items-start gap-2 text-sm group">
+              <span className="text-black min-w-[1.25rem] group-hover:text-blue-500">{'\u276F'}</span>
               <span className="text-justify">{point}</span>
             </li>
           ))}
