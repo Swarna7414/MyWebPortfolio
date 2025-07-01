@@ -32,7 +32,7 @@ const Contact:React.FC=()=>{
     const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        fetch("https://formsubmit.co/ajax/debesh.jha@usd.edu.com", {
+        fetch("https://formsubmit.co/ajax/swarnasaisankar044@gmail.com", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',

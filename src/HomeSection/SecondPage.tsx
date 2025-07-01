@@ -1,5 +1,5 @@
 import React from "react";
-import HomeScreenImage from "../assets/Home/image7.png";
+import HomeScreenImage from "../assets/Home/image.png";
 import SmallScreen from "../assets/SmallPicture.png";
 import {Clarivate,Dblb,Github,GoogleScholr,Linkedin,Orcid,ResearchGate,Semanticscholar,Twitter,} from '../Services/Calls';
 import { FaGoogleScholar } from 'react-icons/fa6';
@@ -15,7 +15,7 @@ import { RiTwitterXLine } from 'react-icons/ri';
 
 const SecondPage: React.FC = () => {
   return (
-    <section className="h-screen w-full p-5">
+    <section className="min-h-screen w-full p-5">
       <div className="h-full w-full flex flex-col lg:flex-row items-center justify-between">
         <div className="w-1/2 sm:w-[70%] lg:w-1/3 h-[83%] flex items-center justify-center ml-0 lg:ml-16">
           
@@ -29,8 +29,9 @@ const SecondPage: React.FC = () => {
           <img
             src={HomeScreenImage}
             alt="Home Image"
-            className="hidden lg:block w-full h-full rounded-4xl hover:rounded-2xl object-contain duration-300 cursor-pointer hover:shadow-2xl hover:shadow-blue-500"
+            className="hidden lg:block w-full h-full rounded-4xl hover:rounded-2xl object-cover duration-300 cursor-pointer hover:shadow-2xl hover:shadow-blue-500"
           />
+          
         </div>
 
         <div className="lg:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">

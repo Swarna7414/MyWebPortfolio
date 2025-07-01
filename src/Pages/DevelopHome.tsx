@@ -31,7 +31,7 @@ const DevelopHome: React.FC = () => {
           <img
             src={HomeScreenImage}
             alt="Home Image"
-            className="hidden xl:block w-full h-full rounded-4xl hover:rounded-2xl object-contain hover:scale-101 duration-300 hover:shadow-2xl hover:shadow-blue-500"
+            className="hidden xl:block w-full h-full rounded-4xl hover:rounded-2xl object-cover hover:scale-101 duration-300 hover:shadow-2xl hover:shadow-blue-500"
           />
         </div>
 
