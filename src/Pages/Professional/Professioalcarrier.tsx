@@ -136,37 +136,33 @@ const Professionalcarrier: React.FC = () => {
           Professional Carrier
         </h1>
 
-        <div className="w-full rounded-xl shadow-md p-6 bg-blue-200">
-      {/* You can map your experience/awards inside here */}
-      <h2 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
-        Container Title
-      </h2>
-      <ul className="space-y-3">
-        {experience.map((item, index) => (
-  <div
-    key={index}
-    className="w-full rounded-xl shadow-md p-6 bg-white dark:bg-neutral-900 transition hover:shadow-lg"
-  >
-    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-1">
-      {item.role}
-    </h2>
-    <p className="text-sm text-gray-600 dark:text-gray-300">
-      {item.name} • {item.location}
-    </p>
-    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{item.year}</p>
-    <ul className="space-y-2 mt-2">
-      {item.points.map((point, i) => (
-        <li key={i} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-200">
-          <span className="text-blue-500 min-w-[1.25rem]">{'\u276F'}</span>
-          <span className="text-justify">{point}</span>
-        </li>
-      ))}
-    </ul>
+        <div className="w-full px-4 mt-6">
+  <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+    {experience.map((item, index) => (
+      <div
+        key={index}
+        className="w-full rounded-xl shadow-md p-6 bg-white dark:bg-neutral-900 transition-all duration-300 hover:shadow-lg"
+      >
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-1">
+          {item.role}
+        </h2>
+        <p className="text-sm text-gray-600 dark:text-gray-300">
+          {item.name} • {item.location}
+        </p>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{item.year}</p>
+        <ul className="space-y-2 mt-2">
+          {item.points.map((point, i) => (
+            <li key={i} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-200">
+              <span className="text-blue-500 min-w-[1.25rem]">{'\u276F'}</span>
+              <span className="text-justify">{point}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </div>
-))}
+</div>
 
-      </ul>
-    </div>
 
 
         </div>
