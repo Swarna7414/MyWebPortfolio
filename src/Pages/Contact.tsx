@@ -16,10 +16,11 @@ const Contact:React.FC=()=>{
     const [formdata,setformdata]=useState<Details>({
         name:"",
         email:"",
+        subject:"",
         message:"",
     });
 
-    const HandleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
+    const HandleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>)=>{
     const {name,value}=e.target;
     setformdata((prev)=>({
         ...prev,
@@ -41,10 +42,11 @@ const Contact:React.FC=()=>{
         })
         .then((res) => {
             if (res.ok) {
-                alert("✅ Message sent successfully to Debesh Jha!");
+                alert("✅ Thank you for reaching out to us. We'll get back to you shortly!");
                     setformdata({
                     name: "",
                     email: "",
+                    subject:"",
                     message: ""
             });
             } else {
@@ -115,6 +117,24 @@ const Contact:React.FC=()=>{
                                         <input name="email" type="email" value={formdata.email} onChange={HandleChange} required
                                         className="p-1.5 border-2 w-full rounded-lg focus:shadow-blue-400 focus:shadow-md focus:bg-transparent"/>
                                     </div>
+                                </label>
+                            </div>
+
+                            {/** Drop Box */}
+                            <div className="space-y-4">
+                                <label className="text-2xl">Purpose of Inquiry
+                                <div className="flex flex-row items-center mt-1">
+                                <select
+                                name="subject" value={formdata.subject} onChange={HandleChange} required
+                                className="p-1.5 border-2 w-full rounded-lg focus:shadow-blue-400 focus:shadow-md focus:bg-transparent">
+                                    <option value="" disabled>Select</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Professional Talk">Professional Talk</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="Support">Support</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                                </div>
                                 </label>
                             </div>
 
