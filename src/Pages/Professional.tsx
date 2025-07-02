@@ -4,7 +4,7 @@ import AndN from "./Professional/AandN";
 import AcademicCarrier from "./Professional/AcademicCarrier";
 import Professional from "./Professional/Professioalcarrier";
 
-const ProfessionalCareerScreen: React.FC = () => {
+const ProfessionalCareer: React.FC = () => {
   return (
     <Carousel>
       <AndN />
@@ -14,4 +14,4 @@ const ProfessionalCareerScreen: React.FC = () => {
   );
 };
 
-export default ProfessionalCareerScreen;
+export default ProfessionalCareer;

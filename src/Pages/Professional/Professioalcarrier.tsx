@@ -16,7 +16,7 @@ const Professionalcarrier: React.FC = () => {
   const experience:Data[]=[
     {
       name:"University of South Dakota",
-      year:"AUG 2024 - Present",
+      year:"AUG 2024-Present",
       location:"Vermillion-South Dakota",
       role:" Visiting Assistant Professor",
       points:[
@@ -32,7 +32,7 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"Northwestern University",
-      year:"JAN 2023 - AUG 2024",
+      year:"JAN 2023-AUG 2024",
       location:"Chicago-Illinois",
       role:"Senior Research Associate",
       points:[
@@ -48,7 +48,7 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"Northwestern University",
-      year:"JAN 2022- DEC 2022",
+      year:"JAN 2022-DEC 2022",
       location:"Chicago-Illinois",
       role:"Research Associate",
       points:[
@@ -64,8 +64,8 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"UiT The Arctic University of Norway",
-      year:"APR 2021 - JAN 2022",
-      location:"Tromsø,Norway",
+      year:"APR 2021-JAN 2022",
+      location:"Tromsø-Norway",
       role:"Researcher",
       points:[
         "Designed deep learning models for colorectal polyp detection and segmentation.",
@@ -81,7 +81,7 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"Simula Research Laboratory & UiT",
-      year:" FEB 2018 - APR 2021",
+      year:" FEB 2018-APR 2021",
       location:"Tromsø,Norway",
       role:"PhD Student",
       points:[
@@ -98,7 +98,7 @@ const Professionalcarrier: React.FC = () => {
 
     {
       name:"Chosun University",
-      year:" SEP 2015 - AUG 2017",
+      year:" SEP 2015-AUG 2017",
       location:"Gwangju,South Korea",
       role:"Graduate Research Assistant",
       points:[
@@ -125,14 +125,14 @@ const Professionalcarrier: React.FC = () => {
         </h1>
 
         <div className="w-full px-4 mt-6">
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1  gap-6">
             {experience.map((item, index) => (
               <div key={index} className="w-full rounded-2xl shadow-md p-6 bg-blue-100 border-blue-400 border-1 hover:shadow-md transition-all cursor-pointer hover:shadow-blue-600 duration-300">
                 <h2 className=" flex flex-row items-center text-xl font-semibold text-black mb-1">
                   <LiaUniversitySolid className="mt-1 mr-1 text-blue-600"/> {item.name}
                 </h2>
-                <div className="text-md flex flex-row">
-                  <h1 className="flex flex-row items-center mr-2"><MdWork className="mr-1.5 text-amber-700"/> {item.role} <span className="text-lg">,</span></h1>
+                <div className="text-md flex lg:flex-col">
+                  <h1 className="flex flex-row items-center mr-2"><MdWork className="mr-1.5 text-amber-700"/> {item.role}</h1>
                   <h1 className="flex flex-row items-center"><IoLocation className="mr-1.5 text-red-500"/> {item.location}</h1>
                 </div>
         <p className="text-sm text-black mb-4 flex flex-row items-center"><FaRegCalendarAlt className="mr-1.5"/>{item.year}</p>

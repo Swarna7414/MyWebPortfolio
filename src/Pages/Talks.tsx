@@ -1,5 +1,5 @@
-import { CgEditBlackPoint } from "react-icons/cg";
 import { IoLocation } from "react-icons/io5";
+import { RiSlideshow4Line } from "react-icons/ri";
 import sandford from "../assets/Talks/sanford.png";
 import IItRorke from "../assets/Talks/𝗜𝗜𝗧𝗥𝗼𝗼𝗿𝗸𝗲𝗲.png"
 import MNIT1 from "../assets/Talks/MNIT1.png"
@@ -8,10 +8,9 @@ import BeyondHuman from "../assets/Talks/BeyondHuman.jpg";
 import TransformingMedicalAi from "../assets/Talks/TransformingMedicalAi.png"
 import Biospy from "../assets/Talks/Biopsy.jpg"
 import future from "../assets/Talks/Future.jpg"
-import carrar from "../assets/Talks/Carrar.jpg";
 import First from "../assets/Talks/FirstTalk.png";
 
-const Workshops:React.FC=()=>{
+const Talks:React.FC=()=>{
     return(
         <section className="p-5 h-screen pt-[85px]">
             <div>
@@ -23,7 +22,7 @@ const Workshops:React.FC=()=>{
                 <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
                             <h1 className="text-xl group-hover:text-blue-700 transition-all duration-300">From Data to Diagnosis – Advancing Medical Imaging with Curated Dataset and AI Algorithms.</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -47,7 +46,7 @@ const Workshops:React.FC=()=>{
                 <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
                             <h1 className="text-xl group-hover:text-blue-700 transition-all duration-300">Explainable Transformers and Mamba Models for Medical Image Interpretation</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -75,7 +74,7 @@ const Workshops:React.FC=()=>{
                 <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
                             <h1 className="text-xl group-hover:text-blue-700 transition-all duration-300">Revealing the Unseen: Deep Learning for Clinically Silent Patterns in Radiology</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -103,7 +102,7 @@ const Workshops:React.FC=()=>{
                 <div className="flex flex-col-reverse cursor-default md:flex-row items-center gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5 group-hover:text-blue-700"/>
                             <h1 className="text-xl group-hover:text-blue-700 transition-all duration-300">Reducing Miss Rates in GI Endoscopy: A Data-Centric AI Approach</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -131,7 +130,7 @@ const Workshops:React.FC=()=>{
                 <div className="flex flex-col-reverse md:flex-row cursor-default items-center gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium group-hover:text-blue-700">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl group:">Beyond Human Vision: Transforming Radiology and GI Endoscopy with AI</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -161,7 +160,7 @@ const Workshops:React.FC=()=>{
             <div className="flex flex-col-reverse md:flex-row items-center gap-4 px-2 cursor-default hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium group-hover:text-blue-700">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">Transforming Medical AI: Advancing Deep Learning for Precision Diagnosis & Image Segmentation</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -187,7 +186,7 @@ const Workshops:React.FC=()=>{
             <div className="flex flex-col-reverse md:flex-row items-center cursor-default gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium group-hover:text-blue-700">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">Biopsy Free early detection of liver diseases using AI</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -214,7 +213,7 @@ const Workshops:React.FC=()=>{
             <div className="flex flex-col-reverse md:flex-row items-center cursor-default gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium group-hover:text-blue-700">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">The Future is Here: Deep Learning Algorithms Can Reduce the Miss-Rate in Colonoscopy</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -240,7 +239,7 @@ const Workshops:React.FC=()=>{
             <div className="flex flex-col-reverse md:flex-row items-center cursor-default gap-4 px-2 hover:scale-101 duration-300 group">
                     <div className="flex-1 flex flex-col">
                         <div className="flex items-center font-medium group-hover:text-blue-700">
-                            <CgEditBlackPoint className="mr-1 mt-1 w-5 h-5"/>
+                            <RiSlideshow4Line className="mr-1 mt-1 w-5 h-5"/>
                             <h1 className="text-xl">Khwopa to Northwestern: My PhD Journey and Some Personal Reflections</h1>
                         </div>
                         <div className="flex items-center text-md">
@@ -267,4 +266,4 @@ const Workshops:React.FC=()=>{
         </section>
     );
 }
-export default Workshops;
+export default Talks;

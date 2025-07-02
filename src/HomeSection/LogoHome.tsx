@@ -4,7 +4,7 @@ import "../Styles/animation.css";
 import logo from "../assets/Home0.png";
 import { useNavigate } from 'react-router-dom';
 
-const FirstPage: React.FC = () => {
+const LogoHome: React.FC = () => {
   const navigate=useNavigate();
 
   const HandleAbout=()=>{
@@ -51,4 +51,4 @@ const FirstPage: React.FC = () => {
   );
 };
 
-export default FirstPage;
+export default LogoHome;
