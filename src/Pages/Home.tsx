@@ -31,7 +31,7 @@ const Home: React.FC = () => {
           <img
             src={SmallScreen}
             alt="HomeImage"
-            className="block xl:hidden w-64 h-60 mt-6 rounded-full object-cover shadow-lg shadow-blue-500 duration-300 hover:scale-105"
+            className="block xl:hidden w-60 h-60 mt-6 rounded-full object-cover shadow-lg shadow-blue-500 duration-300 hover:scale-105"
            onClick={RedirecttoHome}/>
 
           
