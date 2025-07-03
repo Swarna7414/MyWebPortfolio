@@ -199,7 +199,7 @@ const DevelopPublication:React.FC=()=>{
                 </div>
 
                 <div className="px-3 py-2">
-                <ul className="space-y-1">
+                <ul className="space-y-1 h-screen flex flex-col justify-between">
                     {(ativeTab === "journals" ? journalPublications : conferencespublications ).map((publication,index)=>(
                         <li
                             key={index}
