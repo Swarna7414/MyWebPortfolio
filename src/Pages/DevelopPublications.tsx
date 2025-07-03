@@ -94,7 +94,7 @@ const DevelopPublication:React.FC=()=>{
 
     ];
 
-    const conferences = [
+    const conferencespublications = [
         {
             title: "DoubleU-Net: A Deep Convolutional Neural Network for Medical Image Segmentation",
             authors: "D. Jha et al.",
@@ -183,18 +183,24 @@ const DevelopPublication:React.FC=()=>{
         <section className="min-h-screen pt-[72px]">
             <div>
 
-                <div className="flex justify-between items-center text-2xl bg-gray-300 pt-2 font-semibold cursor-pointer">
-                    <div className="flex justify-center w-1/2">
-                        <button onClick={()=>setactiveTab("journals")}>Journals</button>
+                <div className="flex justify-between items-center text-2xl bg-gray-200 pt-2 font-semibold cursor-pointer px-1">
+                    <div onClick={()=>setactiveTab("journals")} 
+                         className={`flex justify-center w-1/2 py-2 transition-all duration-300 rounded-2xl ${
+                            ativeTab === "journals" ? "bg-gray-400 shadow-md" : "bg-transparent hover:bg-gray-300-400"
+                         }`}>
+                        <button>Journals</button>
                     </div>
-                    <div className=" flex justify-center w-1/2">
-                        <button onClick={()=>setactiveTab("conferences")}>Conferences</button>
+                    <div onClick={()=>setactiveTab("conferences")}
+                        className={`flex justify-center w-1/2 py-2 transition-all duration-300 rounded-2xl ${
+                            ativeTab === "conferences" ? "bg-gray-400 shadow-md" : "bg-transparent hover:bg-gray-300"
+                        }`}>
+                        <button>Conferences</button>
                     </div>
                 </div>
 
                 <div className="px-3 py-2">
                 <ul className="space-y-1">
-                    {journalPublications.map((publication,index)=>(
+                    {(ativeTab === "journals" ? journalPublications : conferencespublications ).map((publication,index)=>(
                         <li
                             key={index}
                             className="relative pl-6 text-lg leading-relaxed rounded-lg cursor-pointer transition hover:bg-gray-100 py-1"
