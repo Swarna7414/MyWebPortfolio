@@ -10,6 +10,7 @@ import Contact from "./Pages/Contact";
 import Navbar from "./Route/Navbar";
 import LogoHome from "./Pages/LogoHome";
 import Home from "./Pages/Home";
+import DevelopPublication from "./Pages/DevelopPublications";
 
 
 
@@ -30,6 +31,7 @@ const App: React.FC = () => {
           <Route path="/myworks" element={<MyWorks />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/developpublications" element={<DevelopPublication/>}/>
         </Routes>
     </>
   );

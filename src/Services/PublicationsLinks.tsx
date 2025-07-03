@@ -1,3 +1,14 @@
+export interface Journal{
+    title:string,
+    authors:string,
+    venue:string,
+    onClick:()=>void
+}
+
+export interface Journals{
+    journals:Journal[]
+}
+
 export const  Validatingpolyp=()=>{
     window.open("https://arxiv.org/pdf/2307.16262");
 }

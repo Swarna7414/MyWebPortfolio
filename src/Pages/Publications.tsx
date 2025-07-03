@@ -2,11 +2,18 @@ import React from "react";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { AComprehensiveanalysis, AComprehensiveStudy, Anextensivestudey, Comparativevalidation, Diagnosis, DoubleUNet, Exploring, FANet, HyperKvasir, Kvasir, KvasirCapsule, LightLayers, MachineLearningbasedClassification, MetaLearning, MSRF, NanoNet, PolypGen, Progressively, RealTimePolypDetection, ResUNet, TextGuided, TheEndoText, Validatingpolyp,
   TransUnet,GastroVision,CTLiverSegmentation,TransNetR } from "../Services/PublicationsLinks";
+import { useNavigate } from "react-router-dom";
 
 const DevelopPublicatons: React.FC = () => {
+
+  const navigate=useNavigate();
+
+  const HandleNavigate=()=>{
+    navigate('/developpublications');
+  }
   return (
     <section className="min-h-screen flex flex-col scrollbar-hide text-black p-3 pt-[70px]">
-      <h1 className="text-4xl text-center hover:text-blue-500 duration-300 p-3 mb-3 font-semibold cursor-pointer">
+      <h1 className="text-4xl text-center hover:text-blue-500 duration-300 p-3 mb-3 font-semibold cursor-pointer" onClick={HandleNavigate}>
         Journal Articles & Conference Papers
       </h1>
 
