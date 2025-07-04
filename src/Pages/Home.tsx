@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   }
   return (
     <section className="h-screen w-full p-5 pt-[90px] custom-cursor" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
-      <div className="h-full w-full flex flex-col xl:flex-row items-center justify-between bg-amber-400">
+      <div className="h-full w-full flex flex-col xl:flex-row items-center justify-between">
         <div className="w-1/2 sm:w-[70%] xl:w-1/3 h-[83%] flex items-center justify-center ml-0 lg:ml-16">
           
           <img
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
                 and surgical AI. I’m honored to be named a 2024 Top Scholar by ScholarGPS, ranking in the top 0.5% of scholars worldwide, including #51 in Image Segmentation and #1,201 in Medical Imaging, based on productivity, impact, and quality.
             </h1>
             </div>
-            <div className="mt-6 sm:mt-0 lg:mt-auto lg:self-end sm:self-center flex flex-row-reverse gap-4 sm:gap-6 lg:gap-8 text-4xl mb-4">
+            <div className="mt-6 sm:mt-0 lg:mt-auto lg:self-end sm:self-center flex flex-row-reverse sm:gap-8 gap-1.5 text-4xl mb-4">
                 <IconBox Icon={RiTwitterXLine} onClick={Twitter} />
                 <IconBox Icon={FaLinkedin} onClick={Linkedin} />
                 <IconBox Icon={FaGithub} onClick={Github} />
