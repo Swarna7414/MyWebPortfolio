@@ -37,7 +37,7 @@ const AcademicCarrier: React.FC = () => {
     <section className="p-10 px-12 h-screen pt-[79px]">
       <div className="flex flex-col h-full">
         <h1 className="text-4xl font-semibold hover:text-blue-500 duration-300 cursor-pointer text-center mt-2 pb-5">Academic Background</h1>
-        <div>
+        <div className="h-full flex flex-col justify-between">
           {education.map((item, index) => (
               <ul key={index} className="bg-blue-100 border-1 border-blue-400 px-10 lg:pr-20 py-3 mb-3 rounded-lg shadow-md text-black space-y-2 hover:shadow-md hover:shadow-blue-400 duration-300 group cursor-pointer">
                   <li className="flex items-center gap-2 lg:text-2xl">
