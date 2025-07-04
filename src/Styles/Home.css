@@ -193,6 +193,9 @@
   .hero-image {
     margin-top: 40px;
   }
+  .hero-description {
+    text-align: left;
+  }
 }
 
 /* Revert order on wider screens */
