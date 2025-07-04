@@ -132,11 +132,11 @@ const Contact:React.FC=()=>{
                                 name="subject" value={formdata.subject} onChange={HandleChange} required
                                 className="p-1.5 border-2 w-full rounded-lg focus:shadow-blue-400 focus:shadow-md focus:bg-transparent">
                                     <option value="" disabled>Select</option>
-                                    <option value="General Inquiry">General Inquiry</option>
-                                    <option value="Professional Talk">Professional Talk</option>
-                                    <option value="collaboration">Collaboration</option>
-                                    <option value="Support">Support</option>
-                                    <option value="Others">Others</option>
+                                    <option value="General Inquiry" className="bg-gray-200">General Inquiry</option>
+                                    <option value="Professional Talk" className="bg-gray-200">Professional Talk</option>
+                                    <option value="collaboration" className="bg-gray-200">Collaboration</option>
+                                    <option value="Support" className="bg-gray-200">Support</option>
+                                    <option value="Others" className="bg-gray-200">Others</option>
                                 </select>
                                 </div>
                                 </label>
