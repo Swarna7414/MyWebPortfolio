@@ -31,7 +31,7 @@ const Home: React.FC = () => {
           <img
             src={SmallScreen}
             alt="HomeImage"
-            className="block xl:hidden w-50 h-50 mt-6 rounded-full object-cover shadow-md shadow-blue-500 duration-300 hover:scale-105"
+            className="block xl:hidden w-60 h-60 md:w-64 md:h-64 mt-6 rounded-full object-cover shadow-md shadow-blue-500 duration-300 hover:scale-105"
            onClick={RedirecttoHome}/>
 
           
@@ -43,6 +43,7 @@ const Home: React.FC = () => {
         </div>
 
           <div className="xl:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">
+            <h1 className="block lg:hidden text-transparent">{""}This is Debash</h1>
             <h1 className="hidden xl:block text-4xl font-semibold mb-2 group">This is {" "}<span className="group-hover:text-blue-500 text-5xl cursor-pointer transition-all duration-300 font-bold relative">Debesh Jha <span className="hidden lg:inline-block lg:group-hover:inline-block ml-2 animate-pulse group-hover:animate-bounce">🤖</span></span></h1>
             <div className="flex flex-col self-center sm:px-3">
               <h1 className="text-justify text-xl font-medium w-full max-w-4xl xl:mt-12">
