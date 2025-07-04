@@ -125,35 +125,34 @@ const Professionalcarrier: React.FC = () => {
         </h1>
 
         <div className="w-full px-4 mt-6">
-          <div className="grid grid-cols-1  gap-6">
+          <div className="grid grid-cols-1 gap-6">
             {experience.map((item, index) => (
-              <div key={index} className="w-full rounded-2xl shadow-md p-6 bg-blue-100 border-blue-400 border-1 hover:shadow-md transition-all cursor-pointer hover:shadow-blue-600 duration-300">
-                <h2 className=" flex flex-row items-center text-xl font-semibold text-black mb-1">
-                  <LiaUniversitySolid className="mt-1 mr-1 text-blue-600"/> {item.name}
+              <div key={index} className="w-full rounded-2xl shadow-md sm:py-3 lg:py-5 px-8 bg-blue-100 border-blue-300 border-1 hover:shadow-md transition-all cursor-pointer hover:border-blue-400 hover:shadow-blue-600 duration-300">
+                <h2 className="flex flex-row items-center sm:text-xl lg:text-2xl font-semibold text-black mb-1">
+                  <LiaUniversitySolid className="mt-1 mr-1 text-blue-600"/> {item.name},
                 </h2>
-                <div className="text-md flex lg:flex-col">
-                  <h1 className="flex flex-row items-center mr-2"><MdWork className="mr-1.5 text-amber-700"/> {item.role}</h1>
-                  <h1 className="flex flex-row items-center"><IoLocation className="mr-1.5 text-red-500"/> {item.location}</h1>
+                <div className="text-md flex flex-col lg:flex-row text-md h-auto">
+                  <div className="flex items-center lg:ml-1 mr-2 w-full lg:w-auto"><MdWork className="mr-1.5 text-amber-700"/> {item.role} , </div>
+                  <div className="flex items-center"><IoLocation className="mr-1.5 text-red-500"/> {item.location},</div>
                 </div>
-        <p className="text-sm text-black mb-4 flex flex-row items-center"><FaRegCalendarAlt className="mr-1.5"/>{item.year}</p>
-        <ul className="space-y-2 mt-2">
-          {item.points.map((point, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm group">
-              <span className="text-black min-w-[1.25rem] group-hover:text-blue-500">{'\u276F'}</span>
-              <span className="text-justify">{point}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    ))}
-  </div>
-</div>
-
-
-
+              <p className="text-sm text-black mb- mt-2 ml-1 flex flex-row items-center"><FaRegCalendarAlt className="mr-1.5"/>{item.year}</p>
+              <ul className="space-y-2 mt-2">
+                {item.points.map((point, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm group">
+                    <span className="text-black min-w-[1.25rem] group-hover:text-blue-500">{'\u276F'}</span>
+                    <span className="text-justify">{point}</span>
+                  </li>
+                ))}
+              </ul>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
     </section>
   );
+
 };
+
 
 export default Professionalcarrier;

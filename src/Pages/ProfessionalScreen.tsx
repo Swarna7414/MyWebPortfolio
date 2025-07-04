@@ -28,13 +28,13 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
         {/* Arrows */}
         <button
           onClick={prevSlide}
-          className="fixed left-0 mr-1 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition cursor-pointer text-4xl text-blue-500 hover:scale-105 hover:text-blue-600"
+          className="fixed left-0 mr-1 top-[55%] transform -translate-y-1/2 rounded-full p-2 transition cursor-pointer text-4xl text-blue-500 hover:scale-105 hover:text-blue-600"
         >
           <IoMdArrowDropleftCircle />
         </button>
         <button
           onClick={nextSlide}
-          className="fixed right-0 ml-1 top-1/2 transform -translate-y-1/2 rounded-full p-2 transition cursor-pointer text-4xl text-blue-500 hover:scale-105 hover:text-blue-600"
+          className="fixed right-0 ml-1 top-[55%] transform -translate-y-1/2 rounded-full p-2 transition cursor-pointer text-4xl text-blue-500 hover:scale-105 hover:text-blue-600"
         >
           <IoMdArrowDroprightCircle />
         </button>
