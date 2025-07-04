@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   }
   return (
     <section className="h-screen w-full p-5 pt-[90px] custom-cursor" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
-      <div className="h-full w-full flex flex-col xl:flex-row items-center justify-between">
+      <div className="h-full w-full flex flex-col xl:flex-row items-center justify-between bg-amber-400">
         <div className="w-1/2 sm:w-[70%] xl:w-1/3 h-[83%] flex items-center justify-center ml-0 lg:ml-16">
           
           <img
@@ -42,8 +42,8 @@ const Home: React.FC = () => {
            onClick={RedirecttoHome}/>
         </div>
 
-        <div className="xl:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">
-            <h1 className="text-4xl font-semibold mb-2 group">This is <span className="group-hover:text-blue-500 text-5xl cursor-pointer transition-all duration-300 font-bold relative">Debesh Jha <span className="hidden group-hover:inline-block ml-2 animate-bounce">🤖</span></span></h1>
+          <div className="xl:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">
+            <h1 className="text-4xl font-semibold mb-2 group">This is {" "}<span className="group-hover:text-blue-500 text-5xl cursor-pointer transition-all duration-300 font-bold relative">Debesh Jha <span className="hidden lg:inline-block lg:group-hover:inline-block ml-2 animate-pulse group-hover:animate-bounce">🤖</span></span></h1>
             <div className="flex flex-col self-center">
               <h1 className="text-justify text-xl font-medium w-full max-w-4xl xl:mt-12">
                 I'm Visiting Assistant Professor in the Department of Computer Science at the University of South Dakota. My research focuses on AI-driven tools for medical imaging and diagnostics. 
@@ -63,7 +63,7 @@ const Home: React.FC = () => {
                 <IconBox Icon={SiSemanticscholar} onClick={Semanticscholar} />
                 <IconBox Icon={FaGoogleScholar} onClick={GoogleScholr} />
             </div>
-        </div>
+          </div>
       </div>
     </section>
   );
