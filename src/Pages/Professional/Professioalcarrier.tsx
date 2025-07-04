@@ -120,14 +120,14 @@ const Professionalcarrier: React.FC = () => {
   return (
     <section className="p-10 h-screen pt-[79px]">
       <div className="flex flex-col h-full">
-        <h1 className="self-center font-bold text-4xl hover:text-blue-500 cursor-pointer duration-300">
+        <h1 className="self-center font-semibold text-4xl hover:text-blue-500 cursor-pointer duration-300 text-center">
           Professional Background
         </h1>
 
         <div className="w-full px-4 mt-6">
           <div className="grid grid-cols-1 gap-6">
             {experience.map((item, index) => (
-              <div key={index} className="w-full rounded-2xl shadow-md sm:py-3 lg:py-5 px-8 bg-blue-100 border-blue-300 border-1 hover:shadow-md transition-all cursor-pointer hover:border-blue-400 hover:shadow-blue-600 duration-300">
+              <div key={index} className="w-full rounded-2xl shadow-md py-5 px-8 bg-blue-100 border-blue-300 border-1 hover:shadow-md transition-all cursor-pointer hover:border-blue-400 hover:shadow-blue-600 duration-300">
                 <h2 className="flex flex-row items-center sm:text-xl lg:text-2xl font-semibold text-black mb-1">
                   <LiaUniversitySolid className="mt-1 mr-1 text-blue-600"/> {item.name},
                 </h2>
