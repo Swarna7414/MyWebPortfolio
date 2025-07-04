@@ -61,11 +61,11 @@ const Contact:React.FC=()=>{
 
 
     return(
-        <section className="p-5 pt-[100px]">
+        <section className="p-5 pt-[100px] w-full max-w-screen overflow-x-hidden">
             <h1 className="text-center font-bold text-4xl cursor-pointer">Let's Get In Touch</h1>
             <div className="flex flex-col lg:flex-row gap-8 items-center">
-                <div className="order-2 lg:order-1 h-full lg:w-1/2 p-2 mt-5 flex flex-col">
-                    <h1 className="font-bold text-4xl text-black cursor-pointer hover:text-blue-600">Contact Me</h1>
+                <div className="order-2 lg:order-1 h-full lg:w-1/2 p-2 sm:pl-3 mt-5 flex flex-col">
+                    <h1 className="font-bold sm:2xl text-4xl text-black cursor-pointer hover:text-blue-600">Contact Me</h1>
                     <div className="flex flex-col mt-5 ml-5 gap-y-8">
                         <div className="flex flex-row items-center  hover:underline hover:underline-offset-6 cursor-pointer">
                             <IoMailOutline className="text-3xl mr-2"/>
@@ -79,7 +79,11 @@ const Contact:React.FC=()=>{
 
                         <div className="flex flex-row items-center cursor-pointer">
                             <FaLocationDot className="text-3xl mr-2"/>
-                            <h1 className="text-2xl hover-white-shadow">Department of Computer Science, <br />414 E. Clark Street, <br />Vermillion, SD 57069</h1>
+                            <h1 className="sm:text-md text-2xl hover-white-shadow break-words w-full">
+                                Department of Computer Science, <br />
+                                414 E. Clark Street, <br />
+                                Vermillion, SD 57069
+                            </h1>
                         </div>
 
                         <div className="flex flex-row items-center justify-center cursor-pointer text-black hover:font-bold duration-300 transition-all hover:text-white">
@@ -93,8 +97,8 @@ const Contact:React.FC=()=>{
                         <PiMicrosoftOutlookLogo className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Mailto}/>
                         <TiSocialLinkedin className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Linkedin}/>
                         <RiTwitterXLine className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Twitter}/>
-                        <FaFacebookF className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={FaceBook}/>
-                        <FaInstagram className="rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Instagram}/>
+                        <FaFacebookF className="hidden lg:block rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={FaceBook}/>
+                        <FaInstagram className="hidden lg:block rounded-full border-2 p-2 hover:bg-blue-400 hover:text-black cursor-pointer hover:scale-120 hover:border-blue-400 duration-300" onClick={Instagram}/>
                     </div>
 
                 </div>
