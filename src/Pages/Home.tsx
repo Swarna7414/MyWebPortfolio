@@ -31,7 +31,7 @@ const Home: React.FC = () => {
           <img
             src={SmallScreen}
             alt="HomeImage"
-            className="block xl:hidden w-60 h-60 mt-6 rounded-full object-cover shadow-lg shadow-blue-500 duration-300 hover:scale-105"
+            className="block xl:hidden w-50 h-50 mt-6 rounded-full object-cover shadow-lg shadow-blue-500 duration-300 hover:scale-105"
            onClick={RedirecttoHome}/>
 
           
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
                 and surgical AI. I’m honored to be named a 2024 Top Scholar by ScholarGPS, ranking in the top 0.5% of scholars worldwide, including #51 in Image Segmentation and #1,201 in Medical Imaging, based on productivity, impact, and quality.
             </h1>
             </div>
-            <div className="mt-auto lg:self-end sm:self-center flex flex-row-reverse sm:gap-8 gap-1.5 text-4xl mb-4">
+            <div className="mt-6 sm:mt-0 lg:mt-auto lg:self-end sm:self-center flex flex-row-reverse gap-4 sm:gap-6 lg:gap-8 text-4xl mb-4">
                 <IconBox Icon={RiTwitterXLine} onClick={Twitter} />
                 <IconBox Icon={FaLinkedin} onClick={Linkedin} />
                 <IconBox Icon={FaGithub} onClick={Github} />
