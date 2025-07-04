@@ -144,7 +144,7 @@ const Myworks: React.FC = () => {
             {myWorksData.map((item, index) => (
             <div
               key={index}
-              className="aspect-[2/2] rounded-lg shadow-md p-4 flex flex-col hover:cursor-pointer duration-300 group relative overflow-hidden">
+              className="aspect-[2/2] rounded-lg shadow-md p-4 flex flex-col hover:cursor-pointer duration-300 group relative overflow-hidden bg-gray-200">
               <div className="h-[80%] perspective">
                 <div className="relative w-full h-full transition-transform duration-700 preserve-3d group-hover:rotate-y-180">
                   <div className="absolute w-full h-full backface-hidden" onClick={item.github}>
