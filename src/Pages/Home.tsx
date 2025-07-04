@@ -73,7 +73,7 @@ const IconBox = ({
   Icon,
   onClick,
 }: {
-  Icon: any;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   onClick: () => void;
 }) => (
   <div className="border rounded-full hover:border-blue-500 hover:shadow-sm hover:shadow-blue-500">
