@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Publications from "./Pages/Publications";
+// import Publications from "./Pages/Publications";
 import Talks from "./Pages/Talks";
 import ProfessionalCareer from "./Pages/Professional";
 import DataSet from "./Pages/DataSet";
@@ -11,6 +11,7 @@ import Navbar from "./Route/Navbar";
 import LogoHome from "./Pages/LogoHome";
 import Home from "./Pages/Home";
 import DevelopPublication from "./Pages/DevelopPublications";
+import ResponivePublications from "./Route/ReponivePublications";
 
 
 
@@ -24,7 +25,7 @@ const App: React.FC = () => {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<LogoHome />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/publication" element={<Publications />} />
+          <Route path="/publication" element={<ResponivePublications />} />
           <Route path="/workshop" element={<Talks />} />
           <Route path="/professional" element={<ProfessionalCareer />} />
           <Route path="/dataset" element={<DataSet />} />
