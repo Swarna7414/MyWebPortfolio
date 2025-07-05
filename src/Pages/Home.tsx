@@ -3,6 +3,7 @@ import "../Styles/global.css";
 import "../Styles/animation.css";
 import HomeScreenImage from "../assets/Home/image2.png";
 import SmallScreen from "../assets/SmallPicture.png";
+// import changed from "../assets/changed.jpg";
 import cursorImage from "../assets/cursor.png";
 import {Clarivate,Dblb,Github,GoogleScholr,Linkedin,Orcid,ResearchGate,Semanticscholar,Twitter,} from '../Services/Calls';
 import { FaGoogleScholar } from 'react-icons/fa6';
@@ -26,20 +27,22 @@ const Home: React.FC = () => {
   return (
     <section className="h-screen w-full p-5 pt-[90px] custom-cursor" style={{ cursor: `url(${cursorImage}) 16 16, auto` }}>
       <div className="h-full w-full flex flex-col xl:flex-row items-center justify-between">
-        <div className="w-1/2 sm:w-[70%] xl:w-1/3 h-[83%] flex items-center justify-center ml-0 lg:ml-16">
-          
+        <div className="w-full sm:w-[70%] xl:w-1/3 flex items-center justify-center ml-0 lg:ml-16">
+          {/* Small Screen Image */}
           <img
             src={SmallScreen}
             alt="HomeImage"
-            className="block xl:hidden w-50 h-50 md:w-64 md:h-64 mt-6 rounded-full object-cover shadow-md shadow-blue-500 duration-300 hover:scale-105"
-           onClick={RedirecttoHome}/>
-
+            className="block xl:hidden w-72 rounded-full object-cover mt-6 shadow-md shadow-blue-500 duration-300 hover:scale-105"
+            onClick={RedirecttoHome}
+          />
           
+          {/* Large Screen Image */}
           <img
             src={HomeScreenImage}
             alt="Home Image"
             className="hidden xl:block w-full h-full rounded-4xl hover:rounded-2xl object-cover hover:scale-101 duration-300 hover:shadow-2xl hover:shadow-blue-500"
-           onClick={RedirecttoHome}/>
+            onClick={RedirecttoHome}
+          />
         </div>
 
           <div className="xl:w-3/5 sm:w-full h-[83%] rounded-2xl px-5 flex flex-col">
