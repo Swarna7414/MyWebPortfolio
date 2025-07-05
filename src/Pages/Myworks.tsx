@@ -172,7 +172,7 @@ const Myworks: React.FC = () => {
                 <h2 className="text-lg font-bold group-hover:text-blue-500 duration-300 cursor-pointer">
                   {item.title}
                 </h2>
-                <p className="text-md">{item.subtitle}</p>
+                <p className="text-md hidden md:block">{item.subtitle}</p>
               </div>
             </div>
             ))}

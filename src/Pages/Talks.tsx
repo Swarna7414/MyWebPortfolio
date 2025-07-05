@@ -72,7 +72,7 @@ const Talks:React.FC=()=>{
 return (
     <section className="p-5 h-screen pt-[85px] overflow-y-auto">
       <h1 className="font-medium text-4xl text-center hover:text-blue-500 cursor-pointer duration-300">
-        Research Talks & Events
+        Professional Talks
       </h1>
 
       <div className="mt-5 max-h-[800px] w-full flex flex-col cursor-pointer">
