@@ -9,6 +9,6 @@ export default defineConfig({
     tailwindcss(),
   ],
 
-  base:"/DebeshJha-s-Portfolio"
+  base:"/DebeshJha-s-Portfolio/"
 
 })
