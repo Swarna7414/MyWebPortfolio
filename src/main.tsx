@@ -8,7 +8,7 @@ import React from 'react';
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter basename='/PortFolio'>
+    <BrowserRouter basename='/MyWebPortfolio'>
       <App/>
     </BrowserRouter>
   </React.StrictMode>
