@@ -161,6 +161,10 @@
   transition: transform 0.3s ease;
 }
 
+.responsive-padding {
+  padding: 0;
+}
+
 
 @keyframes wave-hand {
   0% { transform: rotate(0deg); }
@@ -205,6 +209,9 @@
   }
   .social-icons {
     justify-content: center;
+  }
+  .responsive-padding {
+    padding: 0 1.5rem;
   }
 }
 

@@ -27,10 +27,12 @@ const LogoHome: React.FC = () => {
             </span>
           </h1>
           <h2 className="hero-subtitle">Visiting Professor, AI Researcher & Medical Imaging Scientist</h2>
-          <p className="hero-description">
+          <div className="responsive-padding">
+            <p className="hero-description">
              I'm a top-ranked AI researcher developing advanced models and datasets like Colon-SegNet and Kvasir-SEG to enhance medical imaging, 
              diagnostics, and real-world healthcare. Recognized among the world’s top 2% scientists and a 2024 Top Scholar by ScholarGPS, my work 
              supports radiologists through intelligent, ethical technologies.</p>
+          </div>
           <div className="social-icons">
             <IconBox Icon={FaGoogleScholar} onClick={GoogleScholr} />
             <IconBox Icon={FaGithub} onClick={Github} />
