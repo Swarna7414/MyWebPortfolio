@@ -9,7 +9,7 @@ import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import Navbar from "./Route/Navbar";
 import LogoHome from "./Pages/LogoHome";
-import Home from "./Pages/Home";
+// import Home from "./Pages/Home";
 import DevelopPublication from "./Pages/DevelopPublications";
 import ResponivePublications from "./Route/ReponivePublications";
 
@@ -23,8 +23,9 @@ const App: React.FC = () => {
     <>
       <Navbar/>
         <Routes location={location} key={location.pathname}>
+          <Route path="*" element={<LogoHome/>}/>
           <Route path="/" element={<LogoHome />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<LogoHome />} />
           <Route path="/publication" element={<ResponivePublications />} />
           <Route path="/workshop" element={<Talks />} />
           <Route path="/professional" element={<ProfessionalCareer />} />

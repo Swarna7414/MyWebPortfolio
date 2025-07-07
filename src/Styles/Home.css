@@ -22,7 +22,7 @@
   flex: 1;
   min-width: 300px;
   padding-right: 30px;
-  order: 2; /* Mobile first order */
+  order: 2; 
 }
 
 .hero-title {
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-/* 👇 NEW group hover support */
+
 .group-hover-wrapper {
   display: inline-block;
 }
@@ -74,7 +74,6 @@
   color: black;
 }
 
-/* Buttons */
 .hero-buttons {
   display: flex;
   gap: 35px;
@@ -95,7 +94,7 @@
   transform: scale(1.05);
 }
 
-/* Primary Button */
+
 .btn-primary {
   background-color: #38a5e4;
   color: white;
@@ -105,7 +104,7 @@
   background-color: #039af1;
 }
 
-/* Secondary Button */
+
 .btn-secondary {
   background-color: #e5e5e5;
   color: #111;
@@ -116,7 +115,7 @@
   color: black;
 }
 
-/* Hero Image */
+
 .hero-image {
   flex: 1;
   min-width: 300px;
@@ -156,13 +155,13 @@
   border: 5px solid white;
 }
 
-/* Wave Emoji */
+
 .wave-on-hover {
   display: inline-block;
   transition: transform 0.3s ease;
 }
 
-/* 👇 Now triggered by group hover */
+
 @keyframes wave-hand {
   0% { transform: rotate(0deg); }
   15% { transform: rotate(20deg); }
@@ -173,7 +172,7 @@
   100% { transform: rotate(0deg); }
 }
 
-/* Floating Animation */
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
@@ -183,7 +182,7 @@
   }
 }
 
-/* Responsive Layout */
+
 @media (max-width: 768px) {
   .hero {
     padding: 60px 0 30px;
@@ -209,7 +208,7 @@
   }
 }
 
-/* Revert order on wider screens */
+
 @media (min-width: 769px) {
   .hero-content {
     order: 1;
