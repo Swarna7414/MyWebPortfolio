@@ -5,6 +5,7 @@ import AcademicCarrier from "./Professional/AcademicCarrier";
 import Professional from "./Professional/Professioalcarrier";
 import SmallAcademicCarrier from "./Professional/SmallAcademicCarrier";
 import SmallProfessioalcarrier from "./Professional/SmallProfessioalcarrier";
+import SmallAandN from "./Professional/SmallAandN";
 
 const ProfessionalCareer: React.FC = () => {
   const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
@@ -22,7 +23,7 @@ const ProfessionalCareer: React.FC = () => {
 
   return (
     <Carousel>
-      <AndN />
+      {isLargeScreen ? <AndN /> : <SmallAandN/> }
       {isLargeScreen ? <AcademicCarrier /> : <SmallAcademicCarrier />}
       {isLargeScreen ? <Professional /> : <SmallProfessioalcarrier/>}
     </Carousel>
