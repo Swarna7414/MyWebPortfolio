@@ -64,10 +64,7 @@
 
 .hero-description {
   font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: black;
-  text-align: justify;
-  cursor: pointer;
+  line-height: 1.6;
 }
 
 .hero-span {
@@ -162,7 +159,9 @@
 }
 
 .responsive-padding {
-  padding: 0;
+  padding: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 
@@ -205,7 +204,14 @@
     margin-top: 40px;
   }
   .hero-description {
-    text-align: justify;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: black;
+    text-align: left;
+    line-height: 1.6;
+    word-spacing: normal;
+    letter-spacing: normal;
+    hyphens: auto;
   }
   .social-icons {
     justify-content: center;
