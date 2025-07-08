@@ -4,23 +4,22 @@ import { MdWork } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
 
-const Professionalcarrier: React.FC = () => {
-  
+const SmallProfessioalcarrier: React.FC = () => {
   interface Data {
-    name:string,
-    year:string,
-    location:string,
-    role:string,
-    points:string[],
+    name: string;
+    year: string;
+    location: string;
+    role: string;
+    points: string[];
   }
 
-  const experience:Data[]=[
+  const experience: Data[] = [
     {
-      name:"University of South Dakota",
-      year:"AUG 2024-Present",
-      location:"Vermillion-South Dakota",
-      role:" Visiting Assistant Professor",
-      points:[
+      name: "University of South Dakota",
+      year: "AUG 2024-Present",
+      location: "Vermillion-South Dakota",
+      role: " Visiting Assistant Professor",
+      points: [
         "Taught AI-related courses like Machine Learning, Neural Networks, and Technical Seminar to 100+ students.",
         "Delivered Data Mining courses (CSC 586, CSC 486) to 160+ students in four sections.",
         "Achieved 4.3/5.0 teaching and 4.43/5.0 student satisfaction ratings.",
@@ -30,7 +29,6 @@ const Professionalcarrier: React.FC = () => {
         "Conducted AI and biomedical imaging research in academic and interdisciplinary teams."
       ]
     },
-
     {
       name:"Northwestern University",
       year:"JAN 2023-AUG 2024",
@@ -64,7 +62,7 @@ const Professionalcarrier: React.FC = () => {
     },
 
     {
-      name:"UiT The Arctic University of Norway",
+      name:"Arctic University of Norway",
       year:"APR 2021-JAN 2022",
       location:"Tromsø-Norway",
       role:"Researcher",
@@ -81,7 +79,7 @@ const Professionalcarrier: React.FC = () => {
 
 
     {
-      name:"Simula Research Laboratory & UiT",
+      name:"Simula Research Laboratory",
       year:" FEB 2018-APR 2021",
       location:"Tromsø,Norway",
       role:"PhD Student",
@@ -113,47 +111,41 @@ const Professionalcarrier: React.FC = () => {
       ]
     },
 
-
-  ]
-
-
+  ];
 
   return (
-    <section className="p-10 h-screen pt-[79px]">
-      <div className="flex flex-col h-full">
-        <h1 className="self-center font-semibold text-4xl hover:text-blue-500 cursor-pointer duration-300 text-center">
-          Professional Background
-        </h1>
-
-        <div className="w-full px-4 mt-6">
-          <div className="grid grid-cols-1 gap-6">
-            {experience.map((item, index) => (
-              <div key={index} className="w-full rounded-2xl shadow-md py-5 px-8 bg-blue-100 border-blue-300 border-1 hover:shadow-md transition-all cursor-pointer hover:border-blue-400 hover:shadow-blue-600 duration-300">
-                <h2 className="flex flex-row items-center sm:text-xl lg:text-2xl font-semibold text-black mb-1">
-                  <LiaUniversitySolid className="mt-1 mr-1 text-blue-600"/> {item.name},
-                </h2>
-                <div className="text-md flex flex-col lg:flex-row text-md h-auto">
-                  <div className="flex items-center lg:ml-1 mr-2 w-full lg:w-auto"><MdWork className="mr-1.5 text-amber-700"/> {item.role} , </div>
-                  <div className="flex items-center"><IoLocation className="mr-1.5 text-red-500"/> {item.location},</div>
-                </div>
-              <p className="text-sm text-black mb- mt-2 ml-1 flex flex-row items-center"><FaRegCalendarAlt className="mr-1.5"/>{item.year}</p>
-              <ul className="space-y-2 mt-2">
-                {item.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm group">
-                    <span className="text-black min-w-[1.25rem] group-hover:text-blue-500">{'\u276F'}</span>
-                    <span className="text-justify">{point}</span>
-                  </li>
-                ))}
-              </ul>
+    <section className="p-6 px-12 h-screen pt-[79px] sm:p-8 md:p-10 lg:p-12 block lg:hidden">
+      <h1 className="text-center text-3xl font-bold text-gray-900 mb-6">Professional Background</h1>
+      <div className="space-y-6">
+        {experience.map((item, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-md rounded-xl p-4 border-l-4 border-blue-500"
+          >
+            <h2 className="text-lg font-semibold text-gray-800 flex items-center mb-1">
+              <LiaUniversitySolid className="text-blue-500 mr-2 text-xl" /> {item.name}
+            </h2>
+            <div className="text-sm text-gray-700 flex flex-col gap-1">
+              <div className="flex items-center gap-1">
+                <MdWork className="text-orange-600" /> {item.role.trim()}
               </div>
-            ))}
+              <div className="flex items-center gap-1">
+                <IoLocation className="text-red-600" /> {item.location}
+              </div>
+              <div className="flex items-center gap-1">
+                <FaRegCalendarAlt className="text-black" /> {item.year}
+              </div>
+            </div>
+            <ul className="list-disc list-inside mt-3 text-sm text-gray-600 space-y-1">
+              {item.points.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
-
 };
 
-
-export default Professionalcarrier;
+export default SmallProfessioalcarrier;

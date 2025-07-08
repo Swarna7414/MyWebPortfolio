@@ -4,17 +4,18 @@ import AndN from "./Professional/AandN";
 import AcademicCarrier from "./Professional/AcademicCarrier";
 import Professional from "./Professional/Professioalcarrier";
 import SmallAcademicCarrier from "./Professional/SmallAcademicCarrier";
+import SmallProfessioalcarrier from "./Professional/SmallProfessioalcarrier";
 
 const ProfessionalCareer: React.FC = () => {
   const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
 
   useEffect(() => {
     const checkScreen = () => {
-      setIsLargeScreen(window.innerWidth >= 1024); // Tailwind's `lg` breakpoint = 1024px
+      setIsLargeScreen(window.innerWidth >= 1024);
     };
 
-    checkScreen(); // Initial check
-    window.addEventListener("resize", checkScreen); // Listen on resize
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
 
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
@@ -23,7 +24,7 @@ const ProfessionalCareer: React.FC = () => {
     <Carousel>
       <AndN />
       {isLargeScreen ? <AcademicCarrier /> : <SmallAcademicCarrier />}
-      <Professional />
+      {isLargeScreen ? <Professional /> : <SmallProfessioalcarrier/>}
     </Carousel>
   );
 };
