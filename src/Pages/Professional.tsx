@@ -7,6 +7,7 @@ import SmallAcademicCarrier from "./Professional/SmallAcademicCarrier";
 import SmallProfessioalcarrier from "./Professional/SmallProfessioalcarrier";
 import SmallAandN from "./Professional/SmallAandN";
 
+
 const ProfessionalCareer: React.FC = () => {
   const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
 
