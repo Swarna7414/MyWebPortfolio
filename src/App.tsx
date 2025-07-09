@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Talks from "./Pages/Talks";
 import ProfessionalCareer from "./Pages/Professional";
-// import MyWorks from "./Pages/Myworks";
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import Navbar from "./Route/Navbar";
@@ -10,7 +9,6 @@ import LogoHome from "./Pages/LogoHome";
 import DevelopPublication from "./Pages/DevelopPublications";
 import ResponivePublications from "./Route/ReponivePublications";
 import DataViewer from "./Pages/DataSetViewer";
-// import SmallWorks from "./Pages/SmallWorks";
 import WorkViewer from "./Pages/WorksViewer";
 
 
