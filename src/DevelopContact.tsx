@@ -66,7 +66,7 @@ const DevelopConstact: React.FC = () => {
               </div>
               <div className="h-[20%] flex items-center justify-center text-center">
                 <h2 className="text-lg font-bold group-hover:text-blue-200 duration-300 cursor-pointer" onClick={PenSegDataLink}>
-                  PanSegData​
+                  PanSegData
                 </h2>
               </div>
             </div>

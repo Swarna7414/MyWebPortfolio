@@ -3,7 +3,6 @@ import "../Styles/global.css";
 import "../Styles/animation.css";
 import HomeScreenImage from "../assets/Home/image2.png";
 import SmallScreen from "../assets/SmallPicture.png";
-// import changed from "../assets/changed.jpg";
 import cursorImage from "../assets/cursor.png";
 import {Clarivate,Dblb,Github,GoogleScholr,Linkedin,Orcid,ResearchGate,Semanticscholar,Twitter,} from '../Services/Calls';
 import { FaGoogleScholar } from 'react-icons/fa6';

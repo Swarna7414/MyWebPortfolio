@@ -93,7 +93,7 @@ const datasets = [
       description: `This global dataset offers five evaluation types with detection boxes, pixel-wise segmentation, and negatives, enabling robust benchmarking across diverse centers and modalities.`,
     },
     {
-      title: "Medico automatic polyp segmentation dataset",
+      title: "Medico automatic polyp segmentation",
       image: Medicopolypo,
       link: MedicopolypoLink,
       description: `The Medico Challenge benchmarks polyp segmentation algorithms using 1,000 images, promoting robust, fast, and generalizable solutions for medical diagnostics with an open test set.`,

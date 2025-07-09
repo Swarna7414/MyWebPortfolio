@@ -137,7 +137,6 @@ const Contact:React.FC=()=>{
                                 <select
                                 name="subject" value={formdata.subject} onChange={HandleChange} required
                                 className="p-1.5 border-2 w-full rounded-lg focus:shadow-blue-400 focus:shadow-md focus:bg-transparent">
-                                    <option value="" disabled>Select</option>
                                     <option value="General Inquiry" className="bg-gray-200">General Inquiry</option>
                                     <option value="Professional Talk" className="bg-gray-200">Professional Talk</option>
                                     <option value="collaboration" className="bg-gray-200">Collaboration</option>
@@ -164,4 +163,5 @@ const Contact:React.FC=()=>{
         </section>
     );
 }
+
 export default Contact;
