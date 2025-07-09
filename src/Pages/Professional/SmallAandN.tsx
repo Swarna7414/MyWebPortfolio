@@ -79,9 +79,9 @@ const AndN: React.FC = () => {
   ];
 
   return (
-    <section className="p-6 px-12 h-screen pt-[79px] sm:p-8 md:p-10 lg:p-12 block lg:hidden">
-      <div className="flex justify-center mb-4">
-        <div className="inline-flex w-full max-w-md border border-black rounded-full overflow-hidden">
+    <section className="p-6 px-12 h-screen pt-[82px] sm:p-8 md:p-10 lg:p-12 block lg:hidden">
+      <div className="flex justify-center">
+        <div className="inline-flex w-full max-w-md border border-black rounded-full overflow-hidden mb-2">
           <button
             className={`w-1/2 py-2 text-center font-semibold text-sm md:text-base transition-all ${
               activeTab === "awards"
@@ -106,7 +106,7 @@ const AndN: React.FC = () => {
       </div>
 
       {activeTab === "awards" && (
-        <div className="bg-blue-100 rounded-xl p-2 space-y-2 shadow-md">
+        <div className="bg-gray-300 rounded-xl p-4 space-y-2 shadow-md">
           {Awards.map((award, index) => (
             <div key={index} className="flex gap-2 text-sm">
               <span className="text-blue-600 font-bold">{"\u276F"}</span>
@@ -117,10 +117,10 @@ const AndN: React.FC = () => {
       )}
 
       {activeTab === "reviews" && (
-        <div className="bg-blue-100 rounded-xl p-4 space-y-5 shadow-md">
+        <div className="bg-gray-300 rounded-xl p-4 space-y-5 shadow-md">
           {reviews.map((block, index) => (
             <div key={index}>
-              <h2 className="text-blue-600 font-semibold text-base mb-1">{block.year}</h2>
+              <h2 className="text-blue-500 font-semibold text-base mb-1">{block.year}</h2>
               <ul className="ml-3 space-y-1 text-sm text-gray-800">
                 {block.items.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-1">

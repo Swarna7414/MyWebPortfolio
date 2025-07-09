@@ -8,6 +8,7 @@ import { MdPhone } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { SiGooglemeet } from "react-icons/si";
 import "../Styles/style.css";
 import { Details, FaceBook, Gmailto, HandleMeet, Instagram, Linkedin, Mailto, Twitter } from "../Services/Calls";
 
@@ -32,7 +33,7 @@ const Contact:React.FC=()=>{
     const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        fetch("https://formsubmit.co/ajax/swarnasaisankar044@gmail.com", {
+        fetch("https://formsubmit.co/ajax/debeshjha1@gmail.com", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
@@ -87,7 +88,12 @@ const Contact:React.FC=()=>{
                         </div>
 
                         <div className="flex flex-row items-center justify-center cursor-pointer text-black hover:font-bold duration-300 transition-all hover:text-white">
-                            <button className="bg-button w-full h-auto p-3 rounded-2xl cursor-pointer" onClick={HandleMeet}>Let's Meet</button>
+                            <button className="bg-button w-full h-auto p-3 rounded-2xl cursor-pointer" onClick={HandleMeet}>
+                                <div className="flex items-center justify-center gap-5">
+                                    <h1>Let's Meet</h1>
+                                    <SiGooglemeet/>
+                                </div>
+                            </button>
                         </div>
 
                     </div>
